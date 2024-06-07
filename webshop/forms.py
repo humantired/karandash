@@ -4,16 +4,16 @@ from .models import ProductReview
 from django import forms
 
 class UserRegisterForm(UserCreationForm):
-    username = forms.CharField(label='Username', widget=forms.TextInput(
-        attrs={'class': 'form-input', 'placeholder': 'Your nickname here'}
+    username = forms.CharField(label='Логин', widget=forms.TextInput(
+        attrs={'class': 'form-input', 'placeholder': 'Имя пользователя'}
         ))
     
-    password1 = forms.CharField(label='Password', widget=forms.PasswordInput(
-        attrs={'class': 'form-input', 'placeholder': 'Your password here'}
+    password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput(
+        attrs={'class': 'form-input', 'placeholder': 'Пароль'}
         ))
 
-    password2 = forms.CharField(label='Password again', widget=forms.PasswordInput(
-        attrs={'class': 'form-input', 'placeholder': 'Your password again'}
+    password2 = forms.CharField(label='Повторите пароль', widget=forms.PasswordInput(
+        attrs={'class': 'form-input', 'placeholder': 'Повторите пароль'}
         ))
 
     class Meta:
@@ -22,12 +22,12 @@ class UserRegisterForm(UserCreationForm):
 
 
 class UserLoginForm(AuthenticationForm):
-    username = forms.CharField(label='Username', widget=forms.TextInput(
-        attrs={'class': 'form-input', 'placeholder': 'Your nickname here'}
+    username = forms.CharField(label='Логин', widget=forms.TextInput(
+        attrs={'class': 'form-input', 'placeholder': 'Имя пользователя'}
         ))
 
-    password = forms.CharField(label='Password', widget=forms.PasswordInput(
-        attrs={'class': 'form-input', 'placeholder': 'Your password here'}
+    password = forms.CharField(label='Пароль', widget=forms.PasswordInput(
+        attrs={'class': 'form-input', 'placeholder': 'Пароль'}
         ))
 
 
