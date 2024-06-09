@@ -32,4 +32,5 @@ urlpatterns = [
     path('category/<slug:category_slug>/<slug:product_slug>/', product_page, name='product_page'),
     path('', include(router.urls)),
     path('api/user-info/<str:username>/', UserInfoApi.as_view({'get': 'retrieve'}), name='user-info'),
+    path('contacts/', views.ContactsPage.as_view(), name='contacts'),
 ]

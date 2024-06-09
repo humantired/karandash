@@ -1,0 +1,21 @@
+{% extends 'webshop/base.html' %}
+
+<body>
+  {% block content %}
+  <div class="container contacts-container">
+    <div class="map" id="map">
+
+    </div>
+    <div class="contacts-information">
+      <h2 class="contacts-title">Наш адрес</h2>
+      <p class="contacts-text">Зелёная ул., 16, посёлок Дубовое</p>
+      <h2 class="contacts-title">График работы</h2>
+      <p class="contacts-text">Пн-Сб с 9:00 - 19:30</p>
+      <p class="contacts-text">Вс с 10:00 - 17:00</p>
+    </div>
+  </div>
+  <script
+    src="https://api-maps.yandex.ru/2.1/?apikey=44a37c93-f1ae-4972-9f85-f3e5734423b8&lang=ru_RU&?load=package.standard&lang=ru-RU&onload=getYaMap"></script>
+  <script async src="../../static/webshop/js/map.js"></script>
+  {% endblock %}
+</body>

@@ -24,6 +24,9 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from django_filters.rest_framework import DjangoFilterBackend
 
+class ContactsPage(TemplateView):
+    template_name = 'webshop/contacts.html'
+
 class Home(TemplateView):
     template_name = 'webshop/home.html'    
 
